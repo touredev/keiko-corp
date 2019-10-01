@@ -10,7 +10,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/owl.styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/owl.styles.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
@@ -312,24 +312,6 @@
 	<script type="text/javascript" src="js/parallax.js"></script>
 	<script type="text/javascript" src="js/nicescroll.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/scrollTo.js"></script>
-	<script>
-		const loadStyleSheet = (src) => {
-			if (document.createStyleSheet) {
-				document.createStyleSheet(src);
-			} else {
-				const stylesheet = document.createElement('link');
-				stylesheet.href = src;
-				stylesheet.rel = 'stylesheet';
-				stylesheet.type = 'text/css';
-				document.getElementsByTagName('head')[0].appendChild(stylesheet);
-			}
-		}
-		// All of the objects are in the DOM, and all the images, scripts, links have finished loading.
-		window.onload = function () {
-			console.log('window done!');
-		};
-	</script>
 </body>
 
 </html>
